@@ -1,68 +1,72 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
+  box-sizing: border-box;
+  font-family: 'Darker Grotesque', sans-serif;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.App {
+  text-align: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+#light {
+  background-color: white;
+}
+
+#dark {
+  background-color: #353240;
+}
+#dark h1 {
+  color: white;
+}
+
+#dark h2 {
+  color: white;
+}
+
+#dark p {
+  color: white;
+}
+
+#dark .moon {
+  color: yellow;
+}
+
+#dark .color {
+  background-color: #353240;
+}
+
+#dark input {
+  background-color: #9f97bf3a;
+  color: white;
+}
+
+#dark .header {
+  background-color: #353240;
+  color: white;
+}
+
+#dark .header-top {
+  background-color: #211f2b;
+}
+
+#dark .footer {
+  background-color: #211f2b;
+}
+
+#dark .hero h1, #dark .hero h2 {
+  color: black;
+}
+
+@media (min-width: 600px) {
+  #dark .color {
+    background-color: transparent;
   }
 }
